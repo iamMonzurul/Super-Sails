@@ -21,17 +21,14 @@ module.exports = function(grunt) {
 	grunt.config.set('jst', {
 		dev: {
 
-			// To use other sorts of templates, specify a regexp like the example below:
-			// options: {
-			//   templateSettings: {
-			//     interpolate: /\{\{(.+?)\}\}/g
-			//   }
-			// },
+			options: {
 
-			// Note that the interpolate setting above is simply an example of overwriting lodash's
-			// default interpolation. If you want to parse templates with the default _.template behavior
-			// (i.e. using <div></div>), there's no need to overwrite `templateSettings.interpolate`.
+				// use URL relative to templates folder
+		    processName: function(filePath) {
+		    	return filePath.replace('.tmp/public/templates', '');
+		    }
 
+			},
 
 			files: {
 				// e.g.

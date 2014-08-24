@@ -1,0 +1,31 @@
+{
+  "name": "Super Sails",
+  "description": "Boilerplate code for a MEAN stack application using Sails.js",
+  "version": "0.0.0",
+  "authors": [
+    "Casey Webb <notCaseyWebb@gmail.com>"
+  ],
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "GPL v3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fastclick": "~1.0.3",
+    "angular-ui-router": "~0.2.10",
+    "angular-sails": "~1.0.4",
+    "angular-animate": "~1.2.23",
+    "lodash": "~2.4.1",
+    "angular-route": "~1.2.23"
+  },
+  "resolutions": {
+    "angular": ">=1.2.23"
+  }
+}

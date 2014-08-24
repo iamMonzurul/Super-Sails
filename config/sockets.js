@@ -58,15 +58,6 @@ module.exports.sockets = {
 
   /***************************************************************************
   *                                                                          *
-  * Use this option to set the datastore socket.io will use to manage        *
-  * rooms/sockets/subscriptions: default: memory                             *
-  *                                                                          *
-  ***************************************************************************/
-
-  // adapter: 'memory',
-
-  /***************************************************************************
-  *                                                                          *
   * Node.js (and consequently Sails.js) apps scale horizontally. It's a      *
   * powerful, efficient approach, but it involves a tiny bit of planning. At *
   * scale, you'll want to be able to copy your app onto multiple Sails.js    *
@@ -91,7 +82,11 @@ module.exports.sockets = {
   *                                                                          *
   ***************************************************************************/
 
-  // adapter: 'redis',
+  adapter: 'redis',
+
+  // THESE ARE THE DEFAULTS AND SHOULD ONLY BE USED FOR REFERENCE.
+  // CHANGE THEM IN `config/local.js`!!!
+  
   // host: '127.0.0.1',
   // port: 6379,
   // db: 'sails',

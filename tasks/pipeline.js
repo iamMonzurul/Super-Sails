@@ -15,7 +15,7 @@
 // (if you're using LESS with the built-in default config, you'll want
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
-  'styles/**/*.css'
+  '/styles/main.css'
 ];
 
 
@@ -23,8 +23,17 @@ var cssFilesToInject = [
 // (uses Grunt-style wildcard/glob/splat expressions)
 var jsFilesToInject = [
   
-  // Load sails.io before everything else
+  // Load sails.io and app.js before everything else
   'js/dependencies/sails.io.js',
+  'js/app/app.js',
+
+  // Bower scripts
+  'bower_components/lodash/dist/lodash.js',
+  'bower_components/fastclick/lib/fastclick.js',
+  'bower_components/angular-animate/angular-animate.js',
+  'bower_components/angular-sails/dist/angular-sails.js',
+  'bower_components/angular-route/angular-route.js',
+  'bower_components/angular-ui-router/release/angular-ui-router.js',
 
   // Dependencies like jQuery, or Angular are brought in here
   'js/dependencies/**/*.js',
@@ -60,5 +69,5 @@ module.exports.jsFilesToInject = jsFilesToInject.map(function(path) {
   return '.tmp/public/' + path;
 });
 module.exports.templateFilesToInject = templateFilesToInject.map(function(path) {
-  return 'assets/' + path;
+  return '.tmp/public/' + path;
 });

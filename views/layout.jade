@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title= title
+
+    // Viewport mobile tag for sensible mobile support
+    meta(name="viewport",content="width=device-width, initial-scale=1, maximum-scale=1")
+
+    // include any CDN styles here
+    link(rel='stylesheet', type='text/css', href='//cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/css/foundation.min.css')
+
+    // inject linker styles
+    include linker/styles
+
+  body(ng-app='app')
+    .container(ui-view)
+    
+    // include any CDN scripts here
+    script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js")
+    
+    // inject linker templates
+    include linker/templates
+    
+    // inject linker scripts
+    include linker/scripts
+
