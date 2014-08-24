@@ -13,6 +13,7 @@ pain again (ok... it's not that bad...).
   - Redis for sessions & sockets
   - MongoDB for data
 - Prefixing blueprint routes with `/api`
+- Turn off shortcut blueprints
 - Load Angular via CDN
 - Set up basic Angular scaffold
 - Enabled Fastclick.js
